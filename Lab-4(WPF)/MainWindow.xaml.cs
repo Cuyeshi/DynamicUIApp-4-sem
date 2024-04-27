@@ -25,6 +25,13 @@ namespace Lab_4_WPF
             this.Height = 400;
             this.Title = "Графический Редактор";
 
+            // Создаем панель для размещения элементов
+            StackPanel panel = new StackPanel();
+            panel.Orientation = Orientation.Vertical;
+            panel.HorizontalAlignment = HorizontalAlignment.Center;
+            panel.VerticalAlignment = VerticalAlignment.Center;
+            this.Content = panel;
+
             
         }
     }
