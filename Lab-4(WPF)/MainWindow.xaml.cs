@@ -18,6 +18,14 @@ namespace Lab_4_WPF
             CreateUI();
         }
 
-        
+        private void CreateUI()
+        {
+            // Создаем главное окно
+            this.Width = 400;
+            this.Height = 400;
+            this.Title = "Графический Редактор";
+
+            
+        }
     }
 }
