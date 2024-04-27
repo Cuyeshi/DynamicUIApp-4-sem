@@ -40,6 +40,20 @@ namespace Lab_4_WPF
             rectangle.RenderTransformOrigin = new Point(0.5, 0.5); // Устанавливаем точку вращения в центр
             panel.Children.Add(rectangle);
 
+            // Создаем слайдер
+            slider = new Slider();
+            slider.Minimum = 0;
+            slider.Maximum = 180;
+            slider.Value = 0;
+            slider.TickFrequency = 10;
+            slider.Orientation = Orientation.Horizontal;
+            slider.Width = 200;
+            slider.ValueChanged += (sender, e) =>
+            {
+                rotateTransform.Angle = slider.Value;
+            };
+            panel.Children.Add(slider);
+
             
         }
     }
