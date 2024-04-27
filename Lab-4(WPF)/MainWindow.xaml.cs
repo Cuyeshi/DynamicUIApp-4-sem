@@ -54,7 +54,9 @@ namespace Lab_4_WPF
             };
             panel.Children.Add(slider);
 
-            
+            // Устанавливаем начальное значение угла поворота
+            rotateTransform = new RotateTransform();
+            rectangle.RenderTransform = rotateTransform;
         }
     }
 }
