@@ -32,6 +32,14 @@ namespace Lab_4_WPF
             panel.VerticalAlignment = VerticalAlignment.Center;
             this.Content = panel;
 
+            // Создаем квадрат
+            rectangle = new Rectangle();
+            rectangle.Width = 100;
+            rectangle.Height = 100;
+            rectangle.Fill = Brushes.Blue;
+            rectangle.RenderTransformOrigin = new Point(0.5, 0.5); // Устанавливаем точку вращения в центр
+            panel.Children.Add(rectangle);
+
             
         }
     }
